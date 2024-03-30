@@ -1,0 +1,67 @@
+.social {
+    margin-top: 20%;
+    margin-left: 30%;
+    display: flex;
+    gap: 2vw;
+}
+
+.social div {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 4px rgb(189, 188, 188),
+        2px 4px 6px rgb(189, 188, 188),
+        4px 6px 8px rgb(189, 188, 188);
+}
+.social div a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+.social div span{
+    position: absolute;
+    top: -45%;
+    color: white;
+    padding: 5px;
+    box-shadow: 1px 2px 4px rgb(189, 188, 188),
+        2px 4px 6px rgb(189, 188, 188),
+        4px 6px 8px rgb(189, 188, 188); 
+        border-radius: 10px
+}
+
+
+.social .twit:hover, .t{
+    background-color: rgb(87, 87, 240);
+    color: white;
+    animation: shakeX;
+    animation-duration: 1s;
+}
+.social .face:hover, .f{
+    background-color: blue;
+    color: white;
+    animation: bounce;
+    animation-duration: 2s;
+}
+.social .git:hover, .g{
+    background-color: black;
+    color: white;
+    animation: heartBeat;
+    animation-duration: 1s;
+}
+.social .insta:hover, .i{
+    background-color: rgb(244, 113, 135);
+    color: white;
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+.social .youtube:hover, .y{
+    background-color: red;
+    color: white;
+    animation: flipOutY;
+    animation-duration: 2s;
+}

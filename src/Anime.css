@@ -1,0 +1,32 @@
+.text{
+    background-color: #07252d;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.text h2{
+    position: relative;
+    font-size: 6rem;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    outline: none;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, black);
+    animation: animate 5s ease-in-out  infinite alternate-reverse;
+}
+@keyframes animate{
+    0%{
+        /* color: #0e3742; */
+        color: #3f420e;
+        box-shadow: none;
+    }100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 60px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 100px #03bcf4;
+    }
+}

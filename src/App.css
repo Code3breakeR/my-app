@@ -1,0 +1,30 @@
+.time {
+  text-align: center;
+  position: fixed;
+  top: 11%;
+  margin-left: 82%;
+  width: 210px;
+  box-shadow: 2px 4px aqua;
+  border: 1px solid aqua;
+  background-color: black;
+  color: aqua;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 4s steps(20) infinite alternate;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, black); */
+}
+
+@keyframes text{
+  0%{
+    width: 0;
+  }
+  50%{
+    width: 210px;
+   
+  }
+}
+
+/* .App{
+  background: linear-gradient(120deg, #FF0000 0%, #2400FF 100%), linear-gradient(120deg, #FA00FF 0%, #208200 100%), linear-gradient(130deg, #00F0FF 0%, #000000 100%), radial-gradient(110% 140% at 15% 90%, #ffffff 0%, #1700A4 100%), radial-gradient(100% 100% at 50% 0%, #AD00FF 0%, #00FFE0 100%), radial-gradient(100% 100% at 50% 0%, #00FFE0 0%, #7300A9 80%), linear-gradient(30deg, #7ca304 0%, #2200AA 100%);
+background-blend-mode: overlay, color, overlay, difference, color-dodge, difference, normal;
+} */

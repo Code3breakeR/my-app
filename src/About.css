@@ -1,0 +1,45 @@
+.about-bar{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    text-align: justify;
+}
+.about-bar:hover{
+    color: greenyellow;
+}
+/* .fixed-page{
+    position: fixed;
+    top: 50%;
+    border: 1px solid black;
+    box-shadow: 2px 4px;
+    color: aqua;
+    background-color: black;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+} */
+
+.fixed-page{
+    position: sticky;
+    top: 6%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid black;
+    box-shadow: 2px 4px;
+    color: aqua;
+    background-color: black;
+    text-align: center;
+}
+.about-bar{
+    margin-top: 10%;
+}
+.img1{
+    margin-left: 20%;
+}
+.img2{
+    margin-left: 20%;
+}

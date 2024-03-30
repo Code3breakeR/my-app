@@ -1,0 +1,106 @@
+.navbar-box {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    border: 1px solid black;
+    /* box-shadow: 2px 4px; */
+    z-index: 20;
+}
+
+.nav-list {
+    display: flex;
+    gap: 7%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.active {
+    text-decoration: none;
+    border-bottom: 2px solid blue;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid black;
+    border-radius: 34px;
+    background-image: url('day-night.jpeg');
+    background-size: cover;
+}
+
+.slider:before {
+    position: absolute;
+    content: "OFF";
+    height: 34px;
+    width: 35px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px black;
+    background-image: linear-gradient(to left, gray, white);
+    background-color: white;
+    transition: .6s;
+    display: grid;
+    align-items: center;
+}
+
+input:checked+.slider:before {
+    content: 'ON';
+    display: grid;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 8px black;
+    transform: translateX(35px);
+    background-image: linear-gradient(to left, gray, white);
+    color: black;
+}
+
+#check {
+    display: none;
+}
+
+.two-bar {
+    display: none;
+}
+
+/*********************************************************************************************************/
+@media screen and (max-width:800px) {
+    .two-bar {
+        /* position: relative; */
+        display: block;
+        margin-left: 96%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-list-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        transition: all 0.7s ease-in-out;
+    }
+
+}

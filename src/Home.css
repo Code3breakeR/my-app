@@ -1,0 +1,49 @@
+.home-bar {
+    text-align: center;
+    margin-left: 7%;
+    margin-top: 10%;
+    margin-bottom: 0.5%;
+}
+
+.username{
+     width: 70%;
+     height: 125px;  
+     box-shadow: 2px 4px;
+}
+.upper{
+    margin-left: 21%;
+    color: white;
+    background-color: rgb(27, 143, 225);
+    border-radius: 5px;
+}
+
+.lower{
+    margin-left: 1%;
+    color: whitesmoke;
+    background-color: rgb(27, 143, 225);
+    border-radius: 5px;
+}
+
+.clear{
+    margin-left: 1%;
+    color: whitesmoke;
+    background-color: rgb(225, 30, 27);
+    border-radius: 5px;
+}
+/* textarea:invalid{
+    animation: shake 300ms;
+    color: red;
+}
+@keyframes shake {
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+    
+} */
+

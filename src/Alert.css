@@ -1,0 +1,13 @@
+.alert{
+    text-align: center;
+    margin-left: 37%;
+    position: fixed;
+    color: rgb(13, 235, 13);
+    border: 1px solid black;
+    box-shadow: 2px 4px;
+    height: 3%;
+    background-color: black;
+    top: 1%;
+    width: 25%;
+    z-index: 20;
+}
