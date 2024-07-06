@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {WeatherIcons} from "../WeatherApp";
+// import {WeatherIcons} from "../WeatherApp";
 import img1 from "../assets/icons/day.svg";
 
 export const WeatherInfoIcons = {
