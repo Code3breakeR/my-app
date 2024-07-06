@@ -1,12 +1,12 @@
-import React from 'react'
-import './Login.css'
+import React from 'react';
+import './Login.css';
 
 function Login(props) {
     return (props.trigger) ? (
         <div className='login'>
             <form className='forms'>
                 <h2>Sign In</h2>
-                <button className='close' type='submit' onClick={(e) => {props.setTrigger(false)}}> X </button>
+                <button className='close' type='button' onClick={(e) => {props.setTrigger(false)}}> X </button>
                 <div className='details'>
                     <input type='text'></input>
                     <label>UserName</label>
@@ -16,11 +16,11 @@ function Login(props) {
                     <label>Password</label>
                 </div>
                 <button className='btn' type='submit'>Login</button>
-                <a className='link'>Forgot Password</a>
-                <a className='link'>Sign Up</a>
+                <button className='link' type='button'>Forgot Password</button>
+                <button className='link' type='button'>Sign Up</button>
             </form>
         </div>
-    ) : ""
+    ) : "";
 }
 
-export default Login
+export default Login;
