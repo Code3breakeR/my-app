@@ -89,7 +89,7 @@ const About = () => {
                     Modern research
 
                     <div className='img1'>
-                        <img src={require('./download.jpeg')} width="500" ></img>
+                        <img src={require('./download.jpeg')} width="500" alt='Description of the image'></img>
                     </div>
 
                     Rotation curve of a typical spiral galaxy: predicted based on the visible matter (A) and observed (B). The distance is from the galactic core.[image reference needed]
@@ -320,7 +320,7 @@ const About = () => {
                     Clusters of galaxies consist of hundreds to thousands of galaxies bound together by gravity.[171] Clusters of galaxies are often dominated by a single giant elliptical galaxy, known as the brightest cluster galaxy, which, over time, tidally destroys its satellite galaxies and adds their mass to its own.[172]
 
                     <div className='img2'>
-                        <img src={require('./images.jpeg')} width="500" ></img>
+                        <img src={require('./images.jpeg')} width="500" alt='Description of the image'></img>
                     </div>
 
                     Southern plane of the Milky Way from submillimeter wavelengths[173]
