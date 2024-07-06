@@ -4,28 +4,29 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: get code
-      uses: actions/checkout@v4
-    - name: install nodejs
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
-    - name: install dependencies
-      run: npm ci
-    # - name: Run react
-    #   run: npm start
+      - name: get code
+        uses: actions/checkout@v4
+      - name: install nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: install dependencies
+        run: npm ci
+      # - name: Run react
+      #   run: npm start
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
-    - name: get code
-      uses: actions/checkout@v4
-    - name: install nodejs
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
-    - name: install dependencies
-      run: npm ci
-    -name: Build project
-      run: npm run build
-    -name: deploy
-      run: echo "deploying ..."
+      - name: get code
+        uses: actions/checkout@v4
+      - name: install nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: install dependencies
+        run: npm ci
+      - name: Build project
+        run: npm run build
+      - name: Deploy
+        run: echo "deploying ..."
