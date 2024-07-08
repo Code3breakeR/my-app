@@ -30,8 +30,8 @@ jobs:
       - name: upload artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: dist-files
-          path: dist
+          name: build-files
+          path: build
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -39,7 +39,7 @@ jobs:
       - name: Get build artifacts
         uses: actions/download-artifact@v3
         with:
-          name: dist-files
+          name: build-files
       - name: output content
         run: ls
       - name: Deploy
