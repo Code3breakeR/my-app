@@ -5,17 +5,17 @@ import NoteContext from './context/notes/NoteContext';
 
 const About = () => {
 
-    const x = useContext(NoteContext);
+    const detail = useContext(NoteContext);
 
     useEffect(() => {
-        x.update()
-    }, [])
+        detail.update()
+    }, [detail])
 
     return (
         <div className='contain-about'>
             <div className='about-bar' >
                 <p>
-                    This is {x.state.name} and his age {x.state.age}<br></br>
+                    This is {detail.state.name} and his age {detail.state.age}<br></br>
                     This article is about the astronomical structure. For Earth's galaxy, see Milky Way. For other uses, see Galaxy (disambiguation).
 
                     NGC 4414, a typical spiral galaxy in the constellation Coma Berenices, is about 55,000 light-years in diameter and approximately 60 million light-years from Earth.
@@ -89,7 +89,7 @@ const About = () => {
                     Modern research
 
                     <div className='img1'>
-                        <img src={require('./download.jpeg')} width="500" alt='Description of the image'></img>
+                        <img src={require('./download.jpeg')} width="500" alt='Description of the img'></img>
                     </div>
 
                     Rotation curve of a typical spiral galaxy: predicted based on the visible matter (A) and observed (B). The distance is from the galactic core.[image reference needed]
@@ -320,7 +320,7 @@ const About = () => {
                     Clusters of galaxies consist of hundreds to thousands of galaxies bound together by gravity.[171] Clusters of galaxies are often dominated by a single giant elliptical galaxy, known as the brightest cluster galaxy, which, over time, tidally destroys its satellite galaxies and adds their mass to its own.[172]
 
                     <div className='img2'>
-                        <img src={require('./images.jpeg')} width="500" alt='Description of the image'></img>
+                        <img src={require('./images.jpeg')} width="500" alt='Description of the img'></img>
                     </div>
 
                     Southern plane of the Milky Way from submillimeter wavelengths[173]
