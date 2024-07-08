@@ -8,11 +8,11 @@ const Navbar = (props) => {
             <nav>
                 <button className='two-bar' type='submit' onClick={(e) => { props.setNavbar(!props.navbar) }}>=</button>
                 <ul className={props.navbar ? 'nav-list-mobile' : 'nav-list'}>
-                    <Link style={{ color: props.mode.color }} className={props.active === "home" ? "active" : "bar"} onClick={(e) => { props.clickHandler("home") }} to="/Home"><b>Home</b></Link>
-                    <Link style={{ color: props.mode.color }} className={props.active === "about" ? "active" : "bar"} onClick={(e) => { props.clickHandler("about") }} to="/About"><b>About</b></Link>
-                    <Link style={{ color: props.mode.color }} className={props.active === "contact" ? "active" : "bar"} onClick={(e) => { props.clickHandler("contact") }} to="/Contact"><b>Contact</b></Link>
-                    <Link style={{ color: props.mode.color }} className={props.active === "weather" ? "active" : "bar"} onClick={(e) => { props.clickHandler("weather") }} to="/Weather"><b>Weather</b></Link>
-                    <Link style={{ color: props.mode.color }} className={props.active === "userdetail" ? "active" : "bar"} onClick={(e) => { props.clickHandler("userdetail") }} to="/Userconfig"><b>UserDetails</b></Link>
+                    <Link style={{ color: props.mode.color }} className={props.active === "home" ? "active" : "bar"} onClick={(e) => { props.clickHandler("home") }} to="/home"><b>Home</b></Link>
+                    <Link style={{ color: props.mode.color }} className={props.active === "about" ? "active" : "bar"} onClick={(e) => { props.clickHandler("about") }} to="/about"><b>About</b></Link>
+                    <Link style={{ color: props.mode.color }} className={props.active === "contact" ? "active" : "bar"} onClick={(e) => { props.clickHandler("contact") }} to="/contact"><b>Contact</b></Link>
+                    <Link style={{ color: props.mode.color }} className={props.active === "weather" ? "active" : "bar"} onClick={(e) => { props.clickHandler("weather") }} to="/weather"><b>Weather</b></Link>
+                    <Link style={{ color: props.mode.color }} className={props.active === "userdetail" ? "active" : "bar"} onClick={(e) => { props.clickHandler("userdetail") }} to="/userconfig"><b>UserDetails</b></Link>
                     <label className='switch'>
                         <input type="checkbox" onClick={props.toggleStyle} />
                         <span className='slider'></span>

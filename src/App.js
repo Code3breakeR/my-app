@@ -91,15 +91,16 @@ function App() {
           <Navbar toggleStyle={toggle} active={active} mode={mode} clickHandler={clickHandler} setTrigger={setTrigger} navbar={navbar} setNavbar={setNavbar} />
           <Alert alert={alert} mode={mode} />
           <Routes>
-            <Route path="Home" element={<Home mode={mode} />} />
-            <Route path="About" element={<About mode={mode} />} />
-            <Route path="Contact" element={<Contact mode={mode} />} />
-            <Route path="Userconfig" element={<UserConfiguration mode={mode} />} />
-            <Route path="Calci" element={<Calci />} />
+            <Route path="/" element={<Home mode={mode} />} />
+            <Route path="/home" element={<Home mode={mode} />} />
+            <Route path="/about" element={<About mode={mode} />} />
+            <Route path="/contact" element={<Contact mode={mode} />} />
+            <Route path="/userconfig" element={<UserConfiguration mode={mode} />} />
+            <Route path="/calci" element={<Calci />} />
             {/* <Route path='News' element={<News mode={mode} />} /> */}
-            <Route path="weather" element={<WeatherApp category="weather" />} />
-            <Route path="Anime" element={<Anime />} />
-            <Route path='img' element={<Images />} />
+            <Route path="/weather" element={<WeatherApp category="weather" />} />
+            <Route path="/anime" element={<Anime />} />
+            <Route path='/img' element={<Images />} />
           </Routes>
           <Login trigger={trigger} setTrigger={setTrigger} />
           <Footer mode={mode} active={active} clickHandler={clickHandler} />
