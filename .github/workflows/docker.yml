@@ -9,21 +9,21 @@ on:
       - main 
 
 jobs:
-  build:
+  build-and-run:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2  # Checkout the repository
-    - name: Build Docker image
-      run: docker build -t my-app .
+      - uses: actions/checkout@v2 
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Run Docker container
-      id: run_container
-      run: docker run -d -p 8080:3000 --name my-app-container my-app
+      - name: Build Docker image
+        run: docker build -t my-app .
 
-    - name: Display Docker container logs
-      run: docker logs my-app-container
+      - name: Run Docker container
+        id: run_container
+        run: |
+          CONTAINER_ID=$(docker run -d -p 8080:3000 my-app)
+          echo "Container ID: $CONTAINER_ID"
+          echo "::set-output name=container_id::$CONTAINER_ID"
+
+      - name: Display Docker container logs
+        run: docker logs ${{ steps.run_container.outputs.container_id }}
