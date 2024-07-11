@@ -26,4 +26,4 @@ jobs:
           echo "::set-output name=container_id::$CONTAINER_ID"
 
       - name: Display Docker container logs
-        run: docker logs ${{ steps.run_container.outputs.container_id }}
+        run: docker logs -f ${{ steps.run_container.outputs.container_id }}
