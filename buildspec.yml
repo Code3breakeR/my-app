@@ -12,9 +12,8 @@ phases:
     commands:
       - echo Running build...
       - npm run build
-      - zip -r build.zip build/
 
 artifacts:
   files:
     - '**/*'
-  base-directory: build.zip
+  base-directory: build
